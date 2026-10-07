@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F4F0E8">
+  <meta name="description" content="FORME 2026 가을 컬렉션. 일상의 장면에 자연스럽게 스며드는 세 가지 가방을 만나보세요.">
+  <title>FORME — Shapes of Autumn, 2026</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <!-- Shared, original SVG mockups. For photography, replace a visible SVG with
+       <img class="visual-art" data-product-image src="..." alt="...">.
+       Keep data-product-image on collection images: the modal reuses that node. -->
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="0" height="0">
+    <defs>
+      <linearGradient id="wine-leather" x1="0" y1="0" x2="1" y2="0.9">
+        <stop stop-color="#873d50"/><stop offset=".45" stop-color="#702d3d"/><stop offset="1" stop-color="#3e1722"/>
+      </linearGradient>
+      <linearGradient id="tan-leather" x1="0" y1="0" x2="1" y2="1">
+        <stop stop-color="#c59c73"/><stop offset=".6" stop-color="#a77b53"/><stop offset="1" stop-color="#765235"/>
+      </linearGradient>
+      <linearGradient id="dark-leather" x1="0" y1="0" x2="1" y2="1">
+        <stop stop-color="#504b40"/><stop offset=".6" stop-color="#302f29"/><stop offset="1" stop-color="#1d1f1a"/>
+      </linearGradient>
+      <linearGradient id="hero-light" x1="0" y1="0" x2="1" y2="1">
+        <stop stop-color="#b5b0a0"/><stop offset=".5" stop-color="#979486"/><stop offset="1" stop-color="#727568"/>
+      </linearGradient>
+      <linearGradient id="stone-light" x1="0" y1="0" x2="1" y2="1">
+        <stop stop-color="#ebe2d4"/><stop offset="1" stop-color="#c5b8a4"/>
+      </linearGradient>
+      <radialGradient id="soft-shadow"><stop stop-color="#242017" stop-opacity=".28"/><stop offset="1" stop-color="#242017" stop-opacity="0"/></radialGradient>
+      <symbol id="bag-arc" viewBox="0 0 500 500">
+        <path d="M151 248C145 65 357 55 351 250" fill="none" stroke="#37151d" stroke-width="24"/>
+        <path d="M151 243C145 66 353 60 351 243" fill="none" stroke="#8b4253" stroke-width="15"/>
+        <path d="M104 221Q250 301 397 216L425 350Q423 412 250 428Q78 414 75 350Z" fill="url(#wine-leather)" stroke="#4d202b" stroke-width="2"/>
+        <path d="M104 221Q249 298 397 216" fill="none" stroke="#b37480" stroke-opacity=".6" stroke-width="3"/>
+        <path d="M88 348Q250 405 413 347M116 235L94 346M385 233L406 345" fill="none" stroke="#ae6b79" stroke-width="1.5" stroke-dasharray="3 4" opacity=".7"/>
+        <path d="M130 237L140 203M369 235L361 201" stroke="#46202a" stroke-width="19"/>
+        <path d="M133 212L137 227M363 210L367 225" stroke="#ba9970" stroke-width="5"/>
+        <text x="250" y="357" fill="#d7b691" font-family="Georgia,serif" font-size="12" letter-spacing="4" text-anchor="middle">FORME</text>
+      </symbol>
+      <symbol id="bag-fold" viewBox="0 0 500 500">
+        <path d="M176 196V119Q176 62 223 62H278Q325 62 325 119V196" fill="none" stroke="#765235" stroke-width="19"/>
+        <path d="M178 195V122Q178 72 223 72H278Q322 72 322 122V195" fill="none" stroke="#c39a70" stroke-width="10"/>
+        <path d="M112 172L389 172L417 419Q250 452 84 419Z" fill="url(#tan-leather)" stroke="#87613e" stroke-width="2"/>
+        <path d="M112 173L145 211L127 418M389 173L355 211L373 422" fill="none" stroke="#714d32" stroke-width="3" opacity=".6"/>
+        <path d="M125 183H376L349 259Q250 280 151 259Z" fill="#c49a71"/>
+        <path d="M125 183L152 256Q250 277 348 256L376 183M100 410Q250 437 403 410" fill="none" stroke="#e0bf9e" stroke-width="1.5" stroke-dasharray="3 4"/>
+        <path d="M237 254H264V279H237Z" fill="#b49668"/><path d="M242 258H259V274H242Z" fill="#805e3b"/>
+        <text x="250" y="359" fill="#ead2b7" font-family="Georgia,serif" font-size="11" letter-spacing="4" text-anchor="middle">FORME</text>
+      </symbol>
+      <symbol id="bag-frame" viewBox="0 0 500 500">
+        <path d="M141 249V152Q141 83 250 83Q359 83 359 152V249" fill="none" stroke="#22241f" stroke-width="17"/>
+        <path d="M144 245V154Q144 90 250 90Q356 90 356 154V245" fill="none" stroke="#5c5748" stroke-width="8"/>
+        <path d="M116 224Q250 208 384 224L405 403Q250 439 95 403Z" fill="url(#dark-leather)" stroke="#24241e" stroke-width="3"/>
+        <path d="M111 237Q250 221 389 237" stroke="#a79873" stroke-width="6" fill="none"/>
+        <path d="M114 247L106 393Q250 423 394 393L386 247" fill="none" stroke="#7d7865" stroke-width="1.5" stroke-dasharray="3 4" opacity=".6"/>
+        <rect x="237" y="218" width="27" height="14" rx="3" fill="#bbab83"/>
+        <text x="250" y="340" fill="#bdb391" font-family="Georgia,serif" font-size="11" letter-spacing="4" text-anchor="middle">FORME</text>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header page-width">
+    <a class="wordmark" href="#main" aria-label="FORME 처음으로">FORME<span class="wordmark-dot">®</span></a>
+    <span class="header-edition">OBJECTS FOR EVERYDAY</span>
+    <a class="header-link" href="#collection">FALL / WINTER 2026 <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main" class="page-width">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-dot" aria-hidden="true"></span> THE AUTUMN EDIT — VOL. 01</p>
+        <h1 id="hero-title" class="hero-title"><span>SHAPES</span><span>OF <i>AUTUMN</i></span></h1>
+        <div class="hero-note">
+          <span class="editorial-number" aria-hidden="true">01 / 03</span>
+          <div><p class="hero-description">계절이 바뀌는 순간,<br>일상에 새로운 형태를 더하다.</p>
+            <a class="collection-link" href="#collection">컬렉션 보기 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="hero-season">A NEW SEASON. A FAMILIAR FEELING.</p>
+      </div>
+      <figure class="hero-figure">
+        <div class="hero-image image-surface">
+          <!-- Replace this SVG with a photograph, retaining class="visual-art". -->
+          <svg class="visual-art" preserveAspectRatio="xMidYMid slice" viewBox="0 0 600 720" role="img" aria-label="차분한 올리브 배경 위 버건디색 반달 형태의 아크 숄더백 목업">
+            <rect width="600" height="720" fill="url(#hero-light)"/>
+            <path d="M0 0H147L600 558V720H476Z" fill="#e1d7bc" opacity=".13"/>
+            <path d="M0 558L600 407V720H0Z" fill="#c2bca8" opacity=".2"/>
+            <ellipse cx="308" cy="599" rx="260" ry="69" fill="url(#soft-shadow)"/>
+            <path d="M230 548L600 632V720L132 597Z" fill="#3e4035" opacity=".18"/>
+            <use href="#bag-arc" x="28" y="93" width="543" height="543" transform="rotate(-9 300 360)"/>
+            <text x="30" y="676" fill="#f4f0e8" font-family="Georgia,serif" font-style="italic" font-size="19">An ode to quiet moments.</text>
+            <text x="565" y="676" fill="#f4f0e8" font-family="sans-serif" font-size="10" letter-spacing="2" text-anchor="end">FORME / 26</text>
+          </svg>
+          <span class="image-tag">THE ARC BAG · BURGUNDY</span>
+        </div>
+        <figcaption><span>FORME, AUTUMN 2026</span><span>FORM & FEELING</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="story reveal" aria-labelledby="story-title">
+      <div class="section-kicker"><span>01 — OUR PERSPECTIVE</span><span>형태에 담긴 생각</span></div>
+      <div class="story-layout">
+        <figure class="story-figure">
+          <svg class="visual-art" viewBox="0 0 740 590" role="img" aria-label="따뜻한 모래색 공간의 조형적인 받침 위에 놓인 탄 컬러 폴드 토트백 목업">
+            <rect width="740" height="590" fill="url(#stone-light)"/>
+            <path d="M513 0H740V590H695L331 0Z" fill="#f8f0e3" opacity=".38"/>
+            <ellipse cx="330" cy="535" rx="310" ry="52" fill="url(#soft-shadow)"/>
+            <path d="M93 425L459 398L563 449L200 488Z" fill="#ece4d8"/>
+            <path d="M93 425L200 488V590H93Z" fill="#b8aa96"/><path d="M200 488L563 449V590H200Z" fill="#d2c5b2"/>
+            <use href="#bag-fold" x="84" y="-11" width="491" height="491" transform="rotate(5 330 290)"/>
+          </svg>
+          <figcaption><span>LESS, BUT WITH MEANING.</span><span>FIG. 01</span></figcaption>
+        </figure>
+        <div class="story-copy">
+          <span class="story-overline">THE ART OF CARRYING</span>
+          <h2 id="story-title">Made for<br>the <i>everyday.</i></h2>
+          <div class="short-rule" aria-hidden="true"></div>
+          <p>FORME는 간결한 선과 유연한 형태로,<br class="desktop-break"> 매일의 움직임에 자연스럽게 스며드는 가방을 만듭니다.</p>
+          <p>이번 가을, 깊어진 색감과 부드러운 곡선이<br class="desktop-break"> 당신의 평범한 하루에 작은 여운을 남깁니다.</p>
+          <span class="story-signature">Objects to keep close.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="collection" class="collection reveal" aria-labelledby="collection-title" tabindex="-1">
+      <div class="section-kicker"><span>02 — THE COLLECTION</span><span>THREE SHAPES, ONE SEASON</span></div>
+      <div class="collection-heading"><h2 id="collection-title">Your daily <i>form.</i></h2><p>당신의 하루를 닮은 세 가지 형태.</p></div>
+      <div class="product-grid">
+        <article class="product">
+          <button class="product-button" type="button" data-name="The Arc Bag" data-price="₩189,000" data-description="버건디 · 둥근 곡선이 돋보이는 숄더백" aria-haspopup="dialog" aria-controls="product-dialog">
+            <div class="product-image">
+              <span class="product-index" aria-hidden="true">01</span>
+              <svg class="visual-art" preserveAspectRatio="xMidYMid slice" data-product-image viewBox="0 0 520 580" role="img" aria-label="버건디색 아크 숄더백 목업">
+                <rect width="520" height="580" fill="#e8e1d7"/><ellipse cx="260" cy="464" rx="192" ry="31" fill="url(#soft-shadow)"/><use href="#bag-arc" x="21" y="32" width="478" height="478"/>
+              </svg>
+              <span class="product-view">자세히 보기 <span aria-hidden="true">↗</span></span>
+            </div>
+            <div class="product-info"><div><h3>The Arc Bag</h3><p>BURGUNDY / SHOULDER</p></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            <span class="product-price">₩189,000</span>
+          </button>
+        </article>
+        <article class="product product-offset">
+          <button class="product-button" type="button" data-name="The Fold Tote" data-price="₩229,000" data-description="탄 · 여유로운 일상을 담는 구조적인 토트백" aria-haspopup="dialog" aria-controls="product-dialog">
+            <div class="product-image">
+              <span class="product-index" aria-hidden="true">02</span>
+              <svg class="visual-art" preserveAspectRatio="xMidYMid slice" data-product-image viewBox="0 0 520 580" role="img" aria-label="탄 컬러 폴드 토트백 목업">
+                <rect width="520" height="580" fill="#e5ded1"/><ellipse cx="260" cy="469" rx="195" ry="29" fill="url(#soft-shadow)"/><use href="#bag-fold" x="28" y="34" width="464" height="464"/>
+              </svg>
+              <span class="product-view">자세히 보기 <span aria-hidden="true">↗</span></span>
+            </div>
+            <div class="product-info"><div><h3>The Fold Tote</h3><p>TAN / TOTE</p></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            <span class="product-price">₩229,000</span>
+          </button>
+        </article>
+        <article class="product">
+          <button class="product-button" type="button" data-name="The Frame Bag" data-price="₩209,000" data-description="딥 올리브 · 단정한 실루엣의 프레임 핸드백" aria-haspopup="dialog" aria-controls="product-dialog">
+            <div class="product-image">
+              <span class="product-index" aria-hidden="true">03</span>
+              <svg class="visual-art" preserveAspectRatio="xMidYMid slice" data-product-image viewBox="0 0 520 580" role="img" aria-label="딥 올리브색 프레임 핸드백 목업">
+                <rect width="520" height="580" fill="#e0e1d8"/><ellipse cx="260" cy="463" rx="182" ry="29" fill="url(#soft-shadow)"/><use href="#bag-frame" x="24" y="38" width="472" height="472"/>
+              </svg>
+              <span class="product-view">자세히 보기 <span aria-hidden="true">↗</span></span>
+            </div>
+            <div class="product-info"><div><h3>The Frame Bag</h3><p>DEEP OLIVE / HANDBAG</p></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            <span class="product-price">₩209,000</span>
+          </button>
+        </article>
+      </div>
+      <div class="collection-end"><span>DESIGNED TO BECOME PART OF YOU.</span><span>2026 / FALL — WINTER</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer page-width"><a class="wordmark" href="#main" aria-label="FORME 처음으로">FORME</a><p>형태는 간결하게, 일상은 풍부하게.</p><span>© 2026 FORME. CONCEPT COLLECTION.</span></footer>
+
+  <dialog id="product-dialog" class="product-dialog" aria-labelledby="modal-name" aria-describedby="modal-description">
+    <div class="modal-layout">
+      <button class="modal-close" type="button" aria-label="상품 상세 닫기" autofocus><span aria-hidden="true">×</span></button>
+      <div class="modal-image" id="modal-image"></div>
+      <div class="modal-copy"><p class="eyebrow">FORME / AUTUMN 2026</p><h2 id="modal-name"></h2><p id="modal-description"></p><p id="modal-price" class="modal-price"></p><div class="short-rule" aria-hidden="true"></div><p class="modal-note">계절의 색과 일상의 형태.<br>오래 곁에 두고 싶은 하나의 가방.</p><button class="modal-return" type="button">다른 가방 둘러보기 <span aria-hidden="true">↗</span></button></div>
+    </div>
+  </dialog>
+</body>
+</html>
