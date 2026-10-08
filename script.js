@@ -1,6 +1,6 @@
 'use strict';
 
-const dialog = document.querySelector('#product-dialog');
+const dialog = document.querySelector('#product-dialog'); //test
 const modalImage = document.querySelector('#modal-image');
 const closeButton = dialog.querySelector('.modal-close');
 let productTrigger = null;
